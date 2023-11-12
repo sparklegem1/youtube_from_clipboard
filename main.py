@@ -1,7 +1,6 @@
 import time
 import pyperclip
 import certifi
-
 import ssl
 import yt_dlp
 
