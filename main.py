@@ -17,6 +17,8 @@ def download_video_as_mp4(video_url, output_path='music/'):
         print(f'Downloading: {video_title}')
         ydl.download([video_url])
 
+
+
 def custom_clipboard_monitor():
     previous_clipboard_content = pyperclip.paste()
     
@@ -30,7 +32,33 @@ def custom_clipboard_monitor():
             previous_clipboard_content = system_clipboard_content
 
         time.sleep(1)
-
+        
+def install_ffmpeg():
+    
+    print('Checking for ffmpeg')
+    
+    #!!!!!!! this code does not work it was created by ChatGPT !!!!!!!!!!
+    
+    
+    # try:
+    #     subprocess.run(["ffmpeg", "-version"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    # except FileNotFoundError:
+    #     print("ffmpeg not found. Installing...")
+    #     subprocess.run(["apt-get", "install", "-y", "ffmpeg"])  #] Change this line based on your package manager
+    #     system = platform.system().lower()
+        
+    #     if system == "linux":
+    #         # For Debian-based systems (Ubuntu, etc.)
+    #         subprocess.run(["sudo", "apt-get", "install", "-y", "ffmpeg"])
+    #     elif system == "darwin":
+    #         # For macOS using Homebrew
+    #         subprocess.run(["brew", "install", "ffmpeg"])
+    #     elif system == "windows":
+    #         # For Windows using Chocolatey
+    #         subprocess.run(["choco", "install", "ffmpeg"], shell=True)
+    #     else:
+    #         print("Unsupported operating system. Please install ffmpeg manually.")
+            
 if __name__ == "__main__":
+    # install_ffmpeg()
     custom_clipboard_monitor()
-
