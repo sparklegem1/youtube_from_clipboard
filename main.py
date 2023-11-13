@@ -37,7 +37,7 @@ def install_ffmpeg():
     
     print('Checking for ffmpeg')
     
-    #!!!!!!! this code does not work it was created by ChatGPT !!!!!!!!!!
+    #!!!!! The code below doesnt work !!!!!!
     
     
     # try:
